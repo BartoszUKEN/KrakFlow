@@ -14,6 +14,7 @@ class TaskApiService {
 
       return todosList.map((json) {
         return Task(
+          id: json['id'],
           title: json['todo'],
           deadline: "Z serwera",
           done: json['completed'],
